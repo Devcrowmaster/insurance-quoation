@@ -17,6 +17,9 @@ const ContainerForm = styled.div`
 function App() {
 
   const [summary,saveSummary] = useState({});
+
+  const {data} = summary;
+
   return (
     <Container>
       <Header 
@@ -27,7 +30,9 @@ function App() {
         <Form 
           saveSummary={saveSummary}
         />
-        <Summary />
+        {data ? (
+          <Summary/>
+        ): null}
       </ContainerForm>
     </Container>
   );
