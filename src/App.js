@@ -16,7 +16,14 @@ const ContainerForm = styled.div`
 
 function App() {
 
-  const [summary,saveSummary] = useState({});
+  const [summary,saveSummary] = useState({
+    quotation : 0,
+    data:{
+      brand: '',
+      year:'',
+      plan: ''
+    }
+  });
 
   const {data} = summary;
 
@@ -30,9 +37,9 @@ function App() {
         <Form 
           saveSummary={saveSummary}
         />
-        {data ? (
-          <Summary/>
-        ): null}
+        <Summary
+          data={data}
+        />
       </ContainerForm>
     </Container>
   );
