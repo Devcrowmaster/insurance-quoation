@@ -22,3 +22,9 @@ export function calcBrand(brand){
   }
   return increment;
 }
+
+// Calcula el tipo de seguro
+
+export function getPlan(plan){
+  return (plan ==='basico') ? 1.20 : 1.50;
+}
