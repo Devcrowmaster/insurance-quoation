@@ -4,6 +4,7 @@ import styled from '@emotion/styled';
 import Form from './components/Form';
 import Summary from './components/Summary';
 import Result from './components/Result';
+import Spinner from './components/Spinner';
 
 const Container = styled.div`
   max-width: 40rem;
@@ -26,6 +27,8 @@ function App() {
     }
   });
 
+  const [charging,saveCharging] = useState(false);
+
   const {data ,quotation} = summary;
 
   return (
@@ -37,13 +40,18 @@ function App() {
       <ContainerForm>
         <Form 
           saveSummary={saveSummary}
+          saveCharging={saveCharging}
         />
+        {charging ?  <Spinner/> : null}
         <Summary
           data={data}
         />
-        <Result
-          quotation={quotation}
-        />
+        {!charging ?
+          <Result
+            quotation={quotation}
+          />
+        : null
+      }
       </ContainerForm>
     </Container>
   );

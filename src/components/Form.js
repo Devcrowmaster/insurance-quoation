@@ -50,7 +50,7 @@ const Error = styled.div`
   margin-bottom:2rem;
 `;
 
-const Form = ({saveSummary}) => {
+const Form = ({saveSummary,saveCharging}) => {
 
   const [ data , saveData] = useState({
     brand : '',
@@ -101,11 +101,21 @@ const Form = ({saveSummary}) => {
     result =parseFloat(incrementPlan * result).toFixed(2);
     // console.log(result);
   
-    //Total
-    saveSummary({
-      quotation: result,
-      data
-    });
+    saveCharging(true);
+
+    setTimeout(()=> {
+
+      //Elimina el Spinner
+      saveCharging(false);
+      //Total
+      //Pasa la informacion al componente principal
+      saveSummary({
+        quotation: result,
+        data
+      });
+
+    },3000);
+
   }
 
 
