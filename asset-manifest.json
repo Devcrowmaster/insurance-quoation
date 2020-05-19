@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/insurance-quotation/static/css/main.92263ba1.chunk.css",
+    "main.js": "/insurance-quotation/static/js/main.dd28e1a9.chunk.js",
+    "main.js.map": "/insurance-quotation/static/js/main.dd28e1a9.chunk.js.map",
+    "runtime-main.js": "/insurance-quotation/static/js/runtime-main.ace3367f.js",
+    "runtime-main.js.map": "/insurance-quotation/static/js/runtime-main.ace3367f.js.map",
+    "static/js/2.dd65279a.chunk.js": "/insurance-quotation/static/js/2.dd65279a.chunk.js",
+    "static/js/2.dd65279a.chunk.js.map": "/insurance-quotation/static/js/2.dd65279a.chunk.js.map",
+    "index.html": "/insurance-quotation/index.html",
+    "precache-manifest.9d6e8b204b66f3c9e23f43f9e72dbc4a.js": "/insurance-quotation/precache-manifest.9d6e8b204b66f3c9e23f43f9e72dbc4a.js",
+    "service-worker.js": "/insurance-quotation/service-worker.js",
+    "static/css/main.92263ba1.chunk.css.map": "/insurance-quotation/static/css/main.92263ba1.chunk.css.map",
+    "static/js/2.dd65279a.chunk.js.LICENSE.txt": "/insurance-quotation/static/js/2.dd65279a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ace3367f.js",
+    "static/js/2.dd65279a.chunk.js",
+    "static/css/main.92263ba1.chunk.css",
+    "static/js/main.dd28e1a9.chunk.js"
+  ]
+}
